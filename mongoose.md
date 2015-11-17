@@ -1,13 +1,16 @@
 ## 连接数据库
-var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/test');
+
+      var mongoose = require('mongoose');
+      var db = mongoose.connect('mongodb://localhost/test');
 ## 创建schema
+
    var userSchema = db.Schema({
       name: String,
       age: Number
     });
 ## 创建model
-var User = db.model('User', userSchema);
+
+   var User = db.model('User', userSchema);
 
 
 ## save
