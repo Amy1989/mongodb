@@ -11,19 +11,16 @@
 ## 创建model
 
        var User = db.model('User', userSchema);
-
-
-## save
-  报存的时候先创建实体
+## save 报存的时候先创建实体
           var userEnity = new User({
-            name: 'liming',
-            age: '22'
+                  name: 'liming',
+                   age: '22'
           })
           userEnity.save(function(err, collection){
-          if(err){
-              return console.log(err);
-            }
-            console.log('添加成功!');
+                if(err){
+                    return console.log(err);
+                  }
+                  console.log('添加成功!');
           });
 ## update
  multi:true 多条数据更新
